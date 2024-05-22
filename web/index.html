@@ -42,7 +42,9 @@
 
     <main>
       <section id="benefits">
-        <div id="brand">
+        <h2 class="sr-only">What our company has to offer</h2>
+
+        <div id="transform" class="benefits-text-section">
           <h3>Transform your brand</h3>
 
           <p>
@@ -58,7 +60,7 @@
 
         <div id="stand-out-image"></div>
 
-        <div id="stand-out">
+        <div id="stand-out" class="benefits-text-section">
           <h3>Stand out to the right audience</h3>
 
           <p>
@@ -70,7 +72,7 @@
           <a href="#">Learn more</a>
         </div>
 
-        <div id="graphic-design">
+        <div id="graphic-design" class="benefits-text-section">
           <h3>Graphic Design</h3>
 
           <p>
@@ -80,7 +82,7 @@
           </p>
         </div>
 
-        <div id="photography">
+        <div id="photography" class="benefits-text-section">
           <h3>Photography</h3>
 
           <p>
@@ -106,8 +108,10 @@
             needs were met and deadlines were always hit.
           </p>
 
-          <span class="testimonial-name">Emily R.</span>
-          <span class="testimonial-occupation">Marketing Director</span>
+          <div class="testimonial-info">
+            <span class="testimonial-name">Emily R.</span>
+            <span class="testimonial-occupation">Marketing Director</span>
+          </div>
         </div>
 
         <div class="testimonial">
@@ -123,8 +127,10 @@
             brand's success made it a satisfying and enjoyable experience.
           </p>
 
-          <span class="testimonial-name">Thomas S.</span>
-          <span class="testimonial-occupation">Chief Operating Officer</span>
+          <div class="testimonial-info">
+            <span class="testimonial-name">Thomas S.</span>
+            <span class="testimonial-occupation">Chief Operating Officer</span>
+          </div>
         </div>
 
         <div class="testimonial">
@@ -140,8 +146,10 @@
             with Sunnyside. Highly recommended!
           </p>
 
-          <span class="testimonial-name">Jenny F.</span>
-          <span class="testimonial-occupation">Business Owner</span>
+          <div class="testimonial-info">
+            <span class="testimonial-name">Jenny F.</span>
+            <span class="testimonial-occupation">Business Owner</span>
+          </div>
         </div>
       </section>
     </main>
@@ -154,27 +162,34 @@
     </section>
 
     <footer>
-      <a href="/">
-        <img src="/assets/images/logo.svg" alt="Logo" width="124" height="24" />
-      </a>
+      <div>
+        <a href="/">
+          <img
+            src="/assets/images/logo-alt.svg"
+            alt="Logo"
+            width="124"
+            height="24"
+          />
+        </a>
 
-      <nav>
-        <ul>
-          <li>
-            <a href="#">About</a>
-          </li>
+        <nav id="domain-links">
+          <ul>
+            <li>
+              <a href="#">About</a>
+            </li>
 
-          <li>
-            <a href="#">Services</a>
-          </li>
+            <li>
+              <a href="#">Services</a>
+            </li>
 
-          <li>
-            <a href="#">Projects</a>
-          </li>
-        </ul>
-      </nav>
+            <li>
+              <a href="#">Projects</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
 
-      <nav>
+      <nav id="social-links">
         <ul>
           <li>
             <a href="#">
