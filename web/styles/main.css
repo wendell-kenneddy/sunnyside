@@ -20,5 +20,52 @@
 
 body {
   background: var(--dark-moderate-cyan);
+  font-family: "Barlow", sans-serif;
   font-size: 1.8rem;
+}
+
+h1,
+h2,
+h3,
+a {
+  font-family: "Fraunces";
+}
+
+/* HEADER */
+
+#page-header {
+  background-image: url("/assets/images/mobile/image-header.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 8rem;
+}
+
+h1 {
+  color: var(--white);
+  letter-spacing: 0.4rem;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 900;
+}
+
+#page-header nav {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 3.2rem;
+  padding: 0 1.2rem;
+}
+
+#page-header div {
+  margin-top: 8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4.8rem;
 }
