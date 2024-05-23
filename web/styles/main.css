@@ -212,7 +212,7 @@ h1 {
   font-weight: 900;
   text-transform: uppercase;
   letter-spacing: 0.4rem;
-  font-size: 2rem;
+  font-size: 1.8rem;
 }
 
 .testimonial {
@@ -303,4 +303,42 @@ footer a {
 #social-links a img:hover {
   filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(129deg)
     brightness(108%) contrast(101%);
+}
+
+@media (min-width: 768px) {
+  #page-header {
+    background-image: url("/assets/images/desktop/image-header.jpg");
+    padding-bottom: 15rem;
+  }
+
+  .benefits-text-section {
+    padding: 10rem 2.6rem;
+  }
+
+  #egg-image {
+    background-image: url("/assets/images/desktop/image-transform.jpg");
+    min-height: 40rem;
+  }
+
+  #stand-out-image {
+    background-image: url("/assets/images/desktop/image-stand-out.jpg");
+    min-height: 40rem;
+  }
+
+  #graphic-design {
+    background-image: url("/assets/images/desktop/image-graphic-design.jpg");
+  }
+
+  #photography {
+    background-image: url("/assets/images/desktop/image-photography.jpg");
+  }
+
+  #testimonials {
+    padding: 6.4rem 4.8rem 8rem;
+  }
+
+  #domain-links ul {
+    justify-content: center;
+    gap: 4rem;
+  }
 }
