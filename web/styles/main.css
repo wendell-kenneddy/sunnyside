@@ -65,16 +65,50 @@ h1 {
   font-size: 3.6rem;
 }
 
-#page-header nav {
+#logo-and-menu {
   width: 90%;
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin-top: 3.2rem;
-  padding: 0 1.2rem;
+  position: relative;
 }
 
-#page-header div {
+#menu-toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+#menu-items {
+  background: var(--white);
+  position: fixed;
+  top: 10rem;
+  left: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem 3.2rem;
+  gap: 3.2rem;
+  list-style-type: none;
+}
+
+#menu-items a {
+  display: block;
+  padding: 1.6rem 2.4rem;
+  border-radius: 999px;
+  min-width: 12.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+  color: var(--very-dark-grayish-blue);
+  font-family: "Barlow", sans-serif;
+}
+
+#page-header div:last-of-type {
   margin-top: 8rem;
   display: flex;
   flex-direction: column;
@@ -339,10 +373,54 @@ footer a {
     brightness(108%) contrast(101%);
 }
 
+@media (max-width: 767px) {
+  #menu-items::after {
+    content: "";
+    position: absolute;
+    right: -1rem;
+    top: -1rem;
+    width: 0;
+    height: 0;
+    border-left: 2rem solid transparent;
+    border-right: 2rem solid transparent;
+    border-top: 2rem solid var(--white);
+    clear: both;
+    transform: rotate(90deg);
+    width: 90%;
+  }
+
+  #menu-items a:hover {
+    color: #000;
+    background: var(--yellow);
+  }
+}
+
 @media (min-width: 768px) {
   #page-header {
     background-image: url("/assets/images/desktop/image-header.jpg");
     padding-bottom: 15rem;
+  }
+
+  #menu-toggle {
+    display: none;
+  }
+
+  #menu-items {
+    position: static;
+    flex-direction: row;
+    padding: 0;
+    background: none;
+    gap: 1.6rem;
+    justify-content: flex-end;
+  }
+
+  #menu-items a {
+    color: var(--white);
+  }
+
+  #menu-items a:hover {
+    color: #000;
+    background: var(--white);
   }
 
   .benefits-text-section {
