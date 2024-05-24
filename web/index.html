@@ -11,13 +11,13 @@
     />
     <meta name="author" content="Wendell Kenneddy" />
     <meta name="description" content="Sunnyside's website landing page." />
-    <title>Sunnyside</title>
+    <title>Sunnyside | We are creatives</title>
     <link rel="stylesheet" href="/styles/main.css" />
   </head>
 
   <body>
     <header id="page-header">
-      <nav>
+      <div id="logo-and-menu">
         <a href="/">
           <img
             src="/assets/images/logo.svg"
@@ -28,7 +28,27 @@
             decoding="async"
           />
         </a>
-      </nav>
+
+        <nav id="menu" class="active">
+          <button id="menu-toggle">
+            <img
+              src="/assets/images/icon-hamburger.svg"
+              alt="Open menu"
+              width="24"
+              height="18"
+              loading="eager"
+              decoding="async"
+            />
+          </button>
+
+          <ul id="menu-items">
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Contacts</a></li>
+          </ul>
+        </nav>
+      </div>
 
       <div>
         <h1>We are creatives</h1>
