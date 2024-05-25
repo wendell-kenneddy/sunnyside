@@ -1,0 +1,65 @@
+{
+  "name": "Sunnyside",
+  "short_name": "Sunnyside",
+  "description": "Sunnyside's landing page.",
+  "id": "sunnyside",
+  "theme_color": "#3EBFFF",
+  "background_color": "#458c7e",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "start_url": "/",
+  "icons": [
+    {
+      "src": "/assets/images/icon72.png",
+      "sizes": "72x72",
+      "type": "image/png"
+    },
+    {
+      "src": "/assets/images/icon96.png",
+      "sizes": "96x96",
+      "type": "image/png"
+    },
+    {
+      "src": "/assets/images/icon128.png",
+      "sizes": "128x128",
+      "type": "image/png"
+    },
+    {
+      "src": "/assets/images/icon144.png",
+      "sizes": "144x144",
+      "type": "image/png"
+    },
+    {
+      "src": "/assets/images/icon152.png",
+      "sizes": "152x152",
+      "type": "image/png"
+    },
+    {
+      "src": "/assets/images/icon384.png",
+      "sizes": "384x384",
+      "type": "image/png"
+    },
+    {
+      "src": "/assets/images/icon512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/assets/images/screenshot-narrow.png",
+      "sizes": "750x1200",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "Mobile screenshot"
+    },
+    {
+      "src": "/assets/images/screenshot-wide.png",
+      "sizes": "1536x1200",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "Desktop screenshot"
+    }
+  ]
+}
