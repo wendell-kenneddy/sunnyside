@@ -374,6 +374,18 @@ footer a {
 }
 
 @media (max-width: 767px) {
+  #menu-items {
+    width: 90%;
+    display: none;
+  }
+
+  #menu.active #menu-items {
+    display: block;
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1),
+      0 4px 6px -4px rgb(0 0 0 / 0.1);
+    z-index: 999;
+  }
+
   #menu-items::after {
     content: "";
     position: absolute;
@@ -386,7 +398,6 @@ footer a {
     border-top: 2rem solid var(--white);
     clear: both;
     transform: rotate(90deg);
-    width: 90%;
   }
 
   #menu-items a:hover {
@@ -403,6 +414,7 @@ footer a {
 
   #menu-toggle {
     display: none;
+    pointer-events: none;
   }
 
   #menu-items {
