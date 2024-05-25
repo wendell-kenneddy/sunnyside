@@ -9,8 +9,7 @@ function toggleMenuVisibility() {
 
 window.addEventListener("click", (event) => {
   const shouldToggleVisibility =
-    (event.target.tagName != "A" &&
-      event.target.parentElement != menuWrapper &&
+    (!menuWrapper.contains(event.target) &&
       menuWrapper.classList.contains("active")) ||
     event.target.parentElement == menuToggleButton;
 
